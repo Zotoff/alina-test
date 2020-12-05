@@ -154,10 +154,7 @@ a {
 }
 
 .about {
-    position: relative;
-    margin: 0 auto;
-    width: 100%;
-    height: 147px;
+    
 }
 
 .about-info {
@@ -189,47 +186,27 @@ a {
 }
 
 
-
-
-
-
-
 .block-skills {
-    width: 1920px;
-    height: 250px;
+    width: 100%;
+    height: 250px;;
     background: #34547A;
+    margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 .block-inner {
     display: flex;
     justify-content: space-between;
+    padding-top: 100px;
+    margin-left: 300px;
 }
 
 .box-skills {
-    padding-top: 100px;
+    width: 141px;
+    margin-right: 50px;
+    text-align: center;
 }
 
 .box-skills__img {
-    height: 44px;
-    width: 140px;
-}
-
-
-.block-about__inner {
-    width: 1150px;
-    height: 450px;
-}
-
-.block-inner__img {
-    width: 555px;
-    height: 450px;
-    padding-left: 981px;
-    padding-top: 100px;
-}
-
-.p {
-    width: 403px;
-    height: 30px;
-    padding-left: 386px;
-    padding-bottom: 412px;
+    height: 50px;
 }
