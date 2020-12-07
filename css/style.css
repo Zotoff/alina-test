@@ -153,8 +153,8 @@ a {
     letter-spacing: 0.1em;
 }
 
-.about {
-    
+.about.container{
+    justify-content: center;
 }
 
 .about-info {
@@ -195,18 +195,49 @@ a {
 }
 
 .block-inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
     padding-top: 100px;
-    margin-left: 300px;
 }
 
 .box-skills {
     width: 141px;
-    margin-right: 50px;
-    text-align: center;
+    height: 50px;
 }
 
-.box-skills__img {
-    height: 50px;
+.box-skills__title {
+    float: right;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 21px;
+    margin: auto;
+}
+
+.box-skills__text {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    float: right;
+}
+
+
+.wrap {
+    width: 1150px;
+    height: 450px;
+    top: 80px;
+}
+
+.about-wrapper {
+}
+
+.about-wrap__title {
+
+}
+
+.about-wrap__img {
+    width: 555px;
+    height: 450px;
 }
