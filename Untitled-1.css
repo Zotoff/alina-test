@@ -1,0 +1,22 @@
+/*Круглая кнопка с иконкой по центру*/
+
+.button {
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button i {
+    color: #000000;
+    font-size: 30px;
+    left: 5px;
+    position: relative;
+}
