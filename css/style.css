@@ -12,7 +12,7 @@
     font-weight: 400;
 }
 
-body { 
+body {
     margin: 0;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -105,7 +105,6 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
 }
 
 .header-desc {
@@ -120,7 +119,7 @@ body {
 }
 
 .header__text {
-    margin-top: 61px;
+    margin-top: 60px;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
@@ -131,21 +130,19 @@ body {
 }
 
 
-.header__btn {
-    width: 225px;
-    margin-top: 60px;
+.header-btn {
     background-color: #34547A;
-    display: inline-block;
     padding: 25px 41px;
 }
 
-a:link, a:visited{
-    text-decoration: none;
-
-}
-a {
-    color: #ffffff;
+a.buttons {
     letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a.buttons:hover {
+    background-color: rgb(21, 73, 120 );
 }
 
 .about.container{
@@ -153,40 +150,36 @@ a {
 }
 
 .about-info {
+    width: 540px;
     margin-top: 265px;
-    margin-left: 540px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .about__title {
-    text-align: center;
-    height: 30px;
-}
-
-.about__title h2 {
-    text-align: center;
     font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 50px;
     font-weight: 500;
 }
 
-.about__text {
-    width: 540px;
-    margin-top: 45px;
-}
 
-.about__text p {
-    line-height: 26px;
+.about__text {
     font-size: 16px;
+    line-height: 25px;
+    text-align: center;
     color: #727272;
 }
+
 
 /* ........... */
 .block-skills {
     width: 100%;
     height: 250px;;
     background: #34547A;
-    margin-top: 200px;
-    margin-bottom: 100px;
+    margin-top: 120px;
+    margin-bottom: 80px;
 }
 
 .block-inner {
@@ -260,7 +253,7 @@ a {
 
 .row-about {
     padding-right: 150px;
-} 
+}
 
 .row-about__text {
     color: #727272;
@@ -320,7 +313,7 @@ a {
     background-size: cover;
     max-width: 1110px;
     height: 600px;
-    margin: 30px auto;
+    margin: auto auto 100px auto;
     width: 100%;
     position: relative;
 }
@@ -337,9 +330,9 @@ a.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background 0.6s ease;
+    transition: background 0.2s ease;
 }
-       
+
 a.button:hover {
     background-color: rgb(0, 59, 71 );
 }
@@ -351,13 +344,98 @@ a.button:hover {
     position: relative;
 }
 
-
-.gallery__left  {
+.gallery {
+    width: 100%;
+    height: auto;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.gallery__left img {
-    width: 480px;
-    height: 480px;
+.gallery__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 25%;
+    height: auto;
+    position: relative;
+    transition: all .2s ease-in;
 }
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__item::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .2s ease-in;
+}
+
+.gallery__item:hover::before {
+    cursor: pointer;
+    background-color: rgba(52, 84, 122, 0.8);
+}
+
+.gallery-icon  {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+
+
+.block-icons {
+  width: 100%;
+  height: 120px;
+  margin-top: 100px;
+}
+
+.block-info {
+  display: flex;
+  margin: 0 auto;
+}
+
+.box-icons {
+  margin-right: 30px;
+}
+
+
+.proposal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #EEEFF1;
+}
+
+.proposal-about {
+    width: 540px;
+    margin-top: 100px;
+    margin-bottom: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.proposal__title {
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+
+.proposal__text {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+
+
