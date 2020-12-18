@@ -7,6 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swapp" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/android-chrome-96x96.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
@@ -28,19 +35,17 @@
 
     <section class="header-content">
         <div class="container">
-            <div class="header-photo">
+
+            <div class="header-content__wrapper__left">
                 <img src="img/comp.png" alt="photo">
             </div>
-            <div class="header-desc">
-                <h2 class="header__title">Дизайн и верстка</h2>
-                <div class="header__text">
-                    <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
-                </div>
+            <div class="header-content__wrapper__right">
+                <h2 class="header-content-wrap__title">Дизайн и верстка</h2>
+                <p class="header-content-wrap__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+                <a class="btn" href="https://yandex.ru/" target="_blank">НАПИСАТЬ МНЕ</a>
             </div>
-            <div class="header-btn">
-              <a class="buttons" href="https://yandex.ru/" target="_blank">НАПИСАТЬ МНЕ</a>
-            </div>
-        </div>
+
+       </div>
     </section>
 
     <section class="about">
@@ -104,7 +109,7 @@
     <section class="skill">
         <div class="container">
             <div class="skill__wrapper">
-                <div class class="skill__wrapper__left">
+                <div class="skill__wrapper__left">
                     <h2 class="skill-wrap__title">Мои навыки</h2>
                     <div class="row-about">
                         <p class="row-about__text">Adobe Photoshop</p>
@@ -142,13 +147,41 @@
             <img src="img/eye.svg" alt="#">
           </a>
         </div>
-        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#"></div>
-        <div class="gallery__item"><img src="img/gallery1.jpg" alt="#"></div>
-        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#"></div>
-        <div class="gallery__item"><img src="img/gallery1.jpg" alt="#"></div>
-        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#"></div>
-        <div class="gallery__item"><img src="img/gallery1.jpg" alt="#"></div>
-        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#"></div>
+        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
+        <div class="gallery__item"><img src="img/gallery1.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
+        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
+        <div class="gallery__item"><img src="img/gallery1.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
+        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
+        <div class="gallery__item"><img src="img/gallery1.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
+        <div class="gallery__item"><img src="img/gallery2.jpg" alt="#">
+          <a class="gallery-icon" href="https://yandex.ru/" target="_blank">
+            <img src="img/eye.svg" alt="#">
+          </a>
+        </div>
     </section>
 
 <section class="block-icons">
@@ -174,17 +207,39 @@
       <div class="container">
         <div class="proposal-about">
           <h2 class="proposal__title">Хотите веб-сайт?</h2>
-          <p class="proposal__text">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+          <p class="proposal__text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
         </div>
-      </div>
+
+        <form action="#" method="POST" class="proposal__form">
+          <div class="proposal__inputs-container">
+            <input type="text" name="name" required placeholder="Ваше имя" value="" />
+            <input type="email" name="email" required placeholder="Ваш E-mail" value="" />
+            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+          </div>
+          <button class="btn btn--short" type="submit">Отправить</button>
     </section>
 
+    <footer class="layout">
+      <div class="container">
+        <div class="end-info">
+          <div class="end-about">
+            <h3 class="end-about__title">Иванов Иван</h3>
+            <p class="end-about__text">&copy; 2021. Все права защищены.</p>
+        </div>
+          </div>
+          <div class="end-icon">
+            <a href="https://yandex.ru/" target="_blank">
+              <i class="fab fa-vk"></i>
+            </a>
+            <a href="https://yandex.ru/" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://yandex.ru/" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+        </div>
 
-
-
-
-
+    </footer>
 </body>
 </html>
 
